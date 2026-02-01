@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>E-Learning Platform</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f6f8;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #2563eb, #1e40af);
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 { font-size: 1.8rem; }
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover { text-decoration: underline; }
+
+    .hero {
+      padding: 60px 20px;
+      text-align: center;
+      background: #eef2ff;
+    }
+    .hero h2 { font-size: 2.4rem; margin-bottom: 15px; }
+    .hero p { font-size: 1.1rem; margin-bottom: 25px; }
+    .hero button {
+      background: #2563eb;
+      color: white;
+      border: none;
+      padding: 12px 30px;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .hero button:hover { background: #1e40af; }
+
+    section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+    h3 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 1.8rem;
+    }
+    .courses {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+    }
+    .course-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transform: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .course-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .course-content {
+      padding: 20px;
+    }
+    .course-content h4 {
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+    .course-content p {
+      font-size: 0.95rem;
+      margin-bottom: 15px;
+    }
+    .course-content button {
+      background: #2563eb;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .course-content button:hover { background: #1e40af; }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+    }
+    .feature-box {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+    .feature-box h4 { margin-bottom: 10px; }
+
+    footer {
+      background: #1e293b;
+      color: #cbd5f5;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 600px) {
+      header { flex-direction: column; text-align: center; }
+      nav { margin-top: 10px; }
+      .hero h2 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>LearnSphere</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#courses">Courses</a>
+    <a href="#features">Features</a>
+    <a href="#contact">contact</a>
+    <a href="#login">Login</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Learn Anytime, Anywhere</h2>
+  <p>Professional online learning platform for students & developers</p>
+  <button>Get Started</button>
+</section>
+
+<section id="courses">
+  <h3>"Popular Cources"</h3>
+  <div class="courses">
+    <div class="course-card">
+      <img src="https://via.placeholder.com/400x200" alt="Course">
+      <div class="course-content">
+        <h4>Web Development</h4>
+        <p>HTML, CSS, JavaScript & modern frameworks</p>
+        <button>Enroll Now</button>
+      </div>
+    </div>
+    <div class="course-card">
+      <img src="https://via.placeholder.com/400x200" alt="Course">
+      <div class="course-content">
+        <h4>Data Structures</h4>
+        <p>Learn DSA for placements & interviews</p>
+        <button>Enroll Now</button>
+      </div>
+    </div>
+    <div class="course-card">
+      <img src="https://via.placeholder.com/400x200" alt="Course">
+      <div class="course-content">
+        <h4>Machine Learning</h4>
+        <p>Basics to advanced ML concepts</p>
+        <button>Enroll Now</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="features">
+  <h3>Why Choose LearnSphere?</h3>
+  <div class="features">
+    <div class="feature-box">
+      <h4>Expert Instructors</h4>
+      <p>Learn from industry professionals</p>
+    </div>
+    <div class="feature-box">
+      <h4>Flexible Learning</h4>
+      <p>Study at your own pace</p>
+    </div>
+    <div class="feature-box">
+      <h4>Certifications</h4>
+      <p>Get verified course certificates</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h3>Contact Us</h3>
+  <p style="text-align:center">
+    Email: support@learnsphere.com <br>
+    Phone: +91 98765 43210
+  </p>
+</section>
+
+<script>
+  document.querySelector(".hero button").onclick = () => {
+    document.getElementById("courses").scrollIntoView({behavior:"smooth"});
+  };
+</script>
+
+<footer>
+  <p>© 2026 LearnSphere | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
