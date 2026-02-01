@@ -9,6 +9,7 @@
 *DURATION*:4 WEEKS
 
 *MENTOR*:NEELA SANTOSH
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/e99aedb1-2533-405a-8ffb-4de17120a879" />
 
 The LearnSphere E-Learning Platform is a modern, responsive web-based application designed to provide accessible and flexible online education for students and developers. The primary objective of this project is to create a user-friendly learning environment where users can explore popular courses, understand platform features, and begin their learning journey anytime and anywhere.
 
